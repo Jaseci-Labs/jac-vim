@@ -1,1 +1,4 @@
-# VIM Plug for JAC
+## Vim Plugin for Jac
+
+### Installation
+
