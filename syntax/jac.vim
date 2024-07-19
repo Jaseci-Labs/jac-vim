@@ -2,7 +2,6 @@
 syntax keyword jacConstant True False None
 syntax keyword JacType any str int float list tuple set dict bool bytes type
 
-
 syntax keyword jacKeyword let abs class enum node ignore visit revisit spawn with entry exit import include from
 syntax keyword jacKeyword as edge walker async await test assert check if elif else for to by while continue break
 syntax keyword jacKeyword disengage yield skip report return del try except finally raise in is priv pub protect has
@@ -12,7 +11,9 @@ syntax keyword jacKeyword  can nextgroup=jacFunction skipwhite
 syntax match   jacFunction '\%([^[:cntrl:][:space:][:punct:][:digit:]]\|_\)\%([^[:cntrl:][:punct:][:space:]]\|_\)*' display contained
 syntax match   jacFunctionCall '\%([^[:cntrl:][:space:][:punct:][:digit:]]\|_\)\%([^[:cntrl:][:punct:][:space:]]\|_\)*\ze\%(\s*(\)'
 
-syntax keyword jacKeyword obj nextgroup=jacClass skipwhite
+syntax keyword jacKeyword obj    nextgroup=jacClass skipwhite
+syntax keyword jacKeyword node   nextgroup=jacClass skipwhite
+syntax keyword jacKeyword walker nextgroup=jacClass skipwhite
 syntax match   jacClass   '\%([^[:cntrl:][:space:][:punct:][:digit:]]\|_\)\%([^[:cntrl:][:punct:][:space:]]\|_\)*' display contained
 
 syntax match jacCommentLine "#.*$"
@@ -24,7 +25,7 @@ syntax region jacString start=/"""/ skip=/\\"""/ end=/"""/
 syntax region jacString start=/'''/ skip=/\\'''/ end=/'''/
 
 " Numbers
-syntax match   jacNumber      '\<\d\>' display
+syntax match   jacNumber      '\<\d*\>' display
 syntax match   jacHexNumber   '\<0[xX][_0-9a-fA-F]*\x\>' display
 syntax match   jacBinNumber   '\<0[bB][_01]*[01]\>' display
 syntax match   jacHexError    '\<0[xX]\x*[g-zG-Z]\x*\>' display

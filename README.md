@@ -1,6 +1,14 @@
 # Vim Plugin for Jaclang
 
-<p align="center"><img src="logo.png" alt="jaclang-vim logo"/></p>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://www.jac-lang.org//assets/logo.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://www.jac-lang.org//assets/logo.png">
+    <img alt="Jaclang Programming Language: Unique and Powerful programming language that runs on top of Python"
+         src="https://www.jac-lang.org//assets/logo.png"
+         width="20%">
+  </picture>
+</div>
 
 ## Installation
 
