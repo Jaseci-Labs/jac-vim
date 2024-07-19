@@ -15,17 +15,31 @@
 It's recommended to use a plugin manager to install the jac-vim plugin,
 Here is how to do with some popular plugin managers.
 
-### Using [vim-plug]
+### Using [vim-plug](https://github.com/junegunn/vim-plug)
 
 Add a new plugin entry to your `.vimrc` (or `init.vim` on neovim):
 
 ```vim
-Plug 'Jaseci-Labs/jaclang'
+Plug 'Jaseci-Labs/jac-vim'
 ```
 
-To install the plugin execute the bellow command.
+Run `vim` and update the bundles with:
 
 ```vim
 :PlugInstall
+```
+
+### Using [vundle](https://github.com/gmarik/vundle)
+
+Add a new plugin entry to your `.vimrc` (or `init.vim` on neovim):
+
+```vim
+Plugin 'Jaseci-Labs/jac-vim'
+```
+
+Run `vim` and update the bundles with:
+
+```vim
+:PluginInstall!
 ```
 
